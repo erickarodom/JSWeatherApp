@@ -1,6 +1,25 @@
+.test-img {
+  position: absolute;
+  top: -55px;
+  left: 0;
+  right: 0;
+  bottom: -150px;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(/assets/images/bg-sunny.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: opacity(60%);
+}
 .page {
   border-radius: 10px;
   min-height: 80vh;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.submit-button {
+  color: gold;
+  font-size: 30px;
+  cursor: pointer;
 }

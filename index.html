@@ -10,14 +10,36 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-secondary">
+  <body class="bg-secondary position-relative">
+    <div class="test-img"></div>
     <main class="page d-flex flex-column bg-light container">
       <h1 class="text-center">JS Weather & News App</h1>
       <section class="weather-content">
         <div class="input-container">
-          <input type="text" name="location-input" id="location-input" />
+          <label class="d-block" for="location-input"
+            >Search for a city or town.</label
+          >
+          <input
+            type="text"
+            id="location-input"
+            name="location-input"
+            placeholder="e.g. Athens,GA or Athens, Greece"
+            autofocus
+          />
+          <span class="submit-button">
+            <i class="fa-solid fa-square-plus"></i>
+          </span>
+        </div>
+        <div class="cities-row-container">
+          <div class="city-card">
+            <div class="weather-icon"></div>
+          </div>
         </div>
       </section>
       <section class="new-content"></section>
