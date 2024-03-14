@@ -1,10 +1,12 @@
+html {
+  position: relative;
+}
 .test-img {
   position: absolute;
-  top: -55px;
-  left: 0;
-  right: 0;
-  bottom: -150px;
+  top: 0;
+  bottom: 0;
   height: 100vh;
+  width: 100vw;
   z-index: -1;
   background-image: url(/assets/images/bg-sunny.jpg);
   background-repeat: no-repeat;
@@ -18,8 +20,13 @@
   margin-bottom: 5%;
 }
 
-.submit-button {
+.submit-button i {
   color: gold;
-  font-size: 30px;
   cursor: pointer;
+  font-size: 30px;
+}
+
+.card-img-top {
+  padding-top: 2em;
+  width: 100px;
 }
