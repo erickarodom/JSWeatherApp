@@ -18,13 +18,13 @@
   </head>
   <body class="bg-secondary">
     <div class="test-img"></div>
-    <main class="page d-flex flex-column bg-light container">
+    <main class="page d-flex flex-column container">
       <h1 class="text-center">JS Weather & News App</h1>
-      <section class="weather-content">
-        <div class="input-container">
-          <label class="d-block" for="location-input"
-            >Search for a city or town.</label
-          >
+      <section class="weather-content pb-5">
+        <label class="d-block pb-1" for="location-input"
+          >Search for a city or town.</label
+        >
+        <div class="input-container pb-4">
           <input
             type="text"
             id="location-input"
@@ -32,11 +32,11 @@
             placeholder="e.g. Athens,GA or Athens, Greece"
             autofocus
           />
-          <span class="submit-button">
-            <i class="fa-solid fa-square-plus"></i>
-          </span>
+          <button type="button" class="d-inline-flex">
+            <img src="/assets/images/square-plus-regular.svg" />
+          </button>
         </div>
-        <div class="weather-card-row d-md-flex">
+        <div class="weather-card-row d-md-flex justify-content-md-between">
           <div class="card weather-card text-center" style="width: 15rem">
             <img
               src="/assets/images/reshot-icon-sunny-YTEZCHSJPV.svg"
@@ -44,7 +44,9 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">80<span>&#xb0;F</span></h5>
+              <h5 id="temp-farenhiet" class="card-title">
+                80<span>&#xb0;F</span>
+              </h5>
               <h5 class="card-title">10<span>&#xb0;C</span></h5>
               <p class="card-text">Sunny</p>
               <h6 class="card-title">Tacoma, WA</h6>
@@ -57,7 +59,9 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">80<span>&#xb0;F</span></h5>
+              <h5 id="temp-farenhiet" class="card-title">
+                80<span>&#xb0;F</span>
+              </h5>
               <h5 class="card-title">10<span>&#xb0;C</span></h5>
               <p class="card-text">Sunny</p>
               <h6 class="card-title">Tacoma, WA</h6>
@@ -70,7 +74,9 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">80<span>&#xb0;F</span></h5>
+              <h5 id="temp-farenhiet" class="card-title">
+                80<span>&#xb0;F</span>
+              </h5>
               <h5 class="card-title">10<span>&#xb0;C</span></h5>
               <p class="card-text">Sunny</p>
               <h6 class="card-title">Tacoma, WA</h6>
@@ -78,8 +84,8 @@
           </div>
         </div>
       </section>
-      <section class="new-content">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+      <section class="news-content">
+        <div class="accordion accordion-flush pb-4" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button

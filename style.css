@@ -16,14 +16,67 @@ html {
 .page {
   border-radius: 10px;
   min-height: 80vh;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  color: white;
+  padding: 1.5rem 2rem;
+  background-color: rgba(8, 8, 61, 0.692);
 }
 
-.submit-button i {
-  color: gold;
-  cursor: pointer;
-  font-size: 30px;
+label {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+input {
+  border-radius: 5px;
+  border: 0;
+  height: 2rem;
+  min-width: 300px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  color: rgba(161, 162, 163, 0.623);
+}
+input[type="text"] {
+  height: 2.75rem;
+  background-color: rgba(14, 14, 32, 0.555);
+  outline: none;
+  padding-left: 2rem;
+  transition: 0.5s;
+}
+
+input:focus,
+input:hover {
+  background-color: rgba(20, 20, 46, 0.89);
+}
+
+button {
+  height: 2.75rem;
+  width: 2.7rem;
+  background-color: rgb(214, 148, 6);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-color: rgb(223, 172, 7);
+}
+
+button img {
+  height: 30px;
+  width: 30px;
 }
 
 .card-img-top {
